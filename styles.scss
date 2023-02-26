@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(206, 197, 197);
+}
+.header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 3fr;
+  border-top: 3px solid black;
+  .project-container {
+    height: 100vh;
+    padding-top: 2px;
+    border-right: 3px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .add-btn {
+      width: 100%;
+      padding: 5px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .project {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: large;
+      width: 100%;
+      border: 1px solid rgb(114, 105, 105);
+      border-top: none;
+      cursor: pointer;
+    }
+  }
+  .todos-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2px;
+    .A-todo {
+      display: flex;
+      flex-direction: row;
+      .todo {
+        width: 500px;
+        height: 30px;
+        border: 2px solid rgb(139, 126, 126);
+      }
+      .add-btn-todo {
+        border: 2px solid black;
+        border-left: none;
+        border-radius: 5px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 5px;
+      }
+    }
+    .todo-show {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .todos-display {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.affichage {
+  margin: 10px;
+  padding: 5px;
+  border-top: 1px solid black;
+  display: flex;
+  align-items: center;
+
+  flex-direction: row;
+  &:first-child {
+    border-top: none;
+  }
+}
+.btn-edit {
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}

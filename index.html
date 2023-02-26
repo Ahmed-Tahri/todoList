@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="header"><h1>To Do List</h1></div>
+
+    <div class="grid-container">
+      <div class="project-container">
+        <button class="add-btn">Add Project</button>
+        <div data-id="0" class="project">project 1</div>
+      </div>
+      <div class="todos-container">
+        <div class="A-todo">
+          <input type="text" class="todo" />
+          <button class="add-btn-todo">Add Todos</button>
+        </div>
+        <div id="all-todos"></div>
+        <div id="0" class="todo-show"></div>
+      </div>
+    </div>
+  </body>
 </html>
